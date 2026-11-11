@@ -59,6 +59,3 @@ migrate-action:
 run:
 	go mod tidy
 	go run cmd/todoapp/main.go
-
-debug:
-	dlv --listen=:2345 --headless=true --api-version=2 --accept-multiclient debug ./cmd/todoapp/main.go
